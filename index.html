@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes"/>
+    <title>MangoStreet | The Most Trusted Voice in Music</title>
+    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/normalize/3.0.0/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/index.css">
+
+
+</head>
+<body>
+<script>
+    $("a").click(function () {
+        var _this = $(this);
+
+        window.location.href = _this.attr("href");
+
+        return false;
+    })
+</script>
+<div class="footer-over">
+    <div class="container1 top">
+        <div class="col-2 left-nav">
+
+            <div class="icon"><a href="https://twitter.com/" target="_blank" class="media"><i class="fa fa-twitter"
+                                                                                              aria-hidden="true"></i></a>
+            </div>
+            <div class="icon"><a href="https://weibo.com/" target="_blank" class="media"><i class="fa fa-weibo"
+                                                                                            aria-hidden="true"></i></a>
+            </div>
+
+            <div class="icon"><a href="https://www.facebook.com/" target="_blank" class="media"><i
+                    class="fa fa-facebook-official" aria-hidden="true"></i></a></div>
+        </div>
+
+        <div class="col-6 mid-nav">
+
+            <div class="logo"><a href="index.html">Mango Street</a></div>
+
+            <div class="nav">
+                <div class="title"><a href="review.html">reviews</a></div>
+                <div class="title"><a href="bnt.html">best new track</a></div>
+                <div class="title"><a href="podcast.html">podcast</a></div>
+                <!--                <div class="title"><a href="bna.html">best new album</a></div>-->
+                <div class="title"><a href="event.html">events</a></div>
+                <div class="title"><a href="contact%20us.html">contact us</a></div>
+
+            </div>
+
+        </div>
+
+        <div class="col-2 right-nav">
+
+
+<!--            <div class="icon"><a href="user.html" class="media"><i class="fa fa-user" aria-hidden="true"></i></a></div>-->
+<!--            <div class="icon"><a href="#" class="media"><i class="fa fa-headphones" aria-hidden="true"></i></a></div>-->
+            <div class="search-box">
+                <input type="text" class="search-input">
+                <a href="#" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="top2">
+        <div class="logo"><a href="index.html">Mango Street</a></div>
+        <div class="nav">
+            <div class="title review"><a href="review.html">reviews</a></div>
+            <div class="title"><a href="bnt.html">best new track</a></div>
+            <div class="title"><a href="podcast.html">podcast</a></div>
+<!--            <div class="title"><a href="bna.html">best new album</a></div>-->
+            <div class="title"><a href="event.html">events</a></div>
+            <div class="title"><a href="contact%20us.html">contact us</a></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $(".top2").hide();
+            $(window).scroll(function () {
+                if ($(document).scrollTop() >= 179 && $(document).scrollTop() <= 635) {
+                    $(".top2").addClass("fixnav").slideDown("300ms");
+                    $(".top2").removeClass("top3")
+
+                } else if ($(document).scrollTop() >= 635) {
+                    $(".top2").addClass("fixnav top3").slideDown("300ms")
+
+                } else {
+                    $(".top2").slideUp("8000", "linear");
+                    $(".top2").removeClass("top3")
+
+                }
+            });
+            // $(window).scroll(function () {
+            //     $(".footer").hide()
+            //     if ($(document).scrollTop() >= 1000){
+            //         $(".footer").addClass("fixfooter").slideUp(500)
+            //     }
+            //
+            // })
+        })
+    </script>
+    <div class="container2 ">
+        <div class="slider">
+            <div class="scroll">
+                <div class="content"> A new podcast from mango street. Subscribe!</div>
+                <div class="content"> A new podcast from mango street. Subscribe!</div>
+                <div class="content"> A new podcast from mango street. Subscribe!</div>
+                <div class="content"> A new podcast from mango street. Subscribe!</div>
+                <div class="content"> A new podcast from mango street. Subscribe!</div>
+                <div class="content"> A new podcast from mango street. Subscribe!</div>
+                <div class="content"> A new podcast from mango street. Subscribe!</div>
+                <div class="content"> A new podcast from mango street. Subscribe!</div>
+                <div class="content"> A new podcast from mango street. Subscribe!</div>
+                <div class="content"> A new podcast from mango street. Subscribe!</div>
+
+            </div>
+        </div>
+    </div>
+    <script>$(function () {
+        var num = 0;
+
+        function goLeft() {
+
+            if (num == -2000) {
+                num = 0;
+            }
+            num -= 1;
+            $(".scroll").css({
+                left: num
+            })
+        }
+
+        //设置滚动速度
+        var timer = setInterval(goLeft, 30);
+        //设置鼠标经过时滚动停止
+        $(".slider").hover(function () {
+                clearInterval(timer);
+            },
+            function () {
+                timer = setInterval(goLeft, 30);
+            })
+    })
+
+    </script>
+    <div class="container3">
+        <div class="col-6">
+            <div class="new_music">
+                <div class="title">
+                    RECOMMENDED&nbsp;&nbsp; MUSIC &nbsp; &nbsp;REVIEWS
+                </div>
+                <a id="i2" href="folklore.html"><img id="i1" src="img/1.png" alt=""></a>
+                <script>
+                    setInterval(foo, 3000);
+
+                </script>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="recommend">
+                <div class="title">
+                    LISTEN NOW
+                </div>
+
+                <div class="song">
+                    <a href="betty.html">
+                        <div class="pic col-3">
+                            <div class="shade"></div>
+                            <img src="img/betty.JPG">
+                        </div>
+                        <div class="text col-7">
+                            <div class="intro ">
+                                Watch Taylor Swift’s Debut Performance of “betty” at the ACMs.She returned to the
+                                Academy of
+                                Country Music Awards for the live premiere of her folklore sin-gle.
+                            </div>
+                            <div class="play">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                                PLAY NOW
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="song">
+                    <a href="Live%20Forever.html">
+                        <div class="pic col-3">
+                            <div class="shade"></div>
+                            <img src="img/bnm.png">
+                        </div>
+                        <div class="text col-7">
+                            <div class="intro intro2 ">
+                                On his fascinating debut album, the D.C.-based musician moves freely through many
+                                different
+                                styles—arena-rock, folk, rap—creating an album about that freedom as a Black artist and
+                                so
+                                much more.
+                            </div>
+                            <div class="play">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                                PLAY NOW
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container4 ">
+
+        <div class="col-0.5 spe1"></div>
+        <div class="col-3 spe2">
+            <div class="posterbox">
+                <img src="img/poster.png" class="poster_img">
+
+            </div>
+        </div>
+        <div class="col-6.5 spe3">
+            <div class="review_list">
+                <div class="title">
+                    reviews
+                </div>
+
+                <div class="album">
+                    <div class="col-4">
+                        <div class="abbox">
+                            <a href="folklore.html"><img src="img/a5.png"></a>
+                        </div>
+
+                    </div>
+                    <div class="col-6">
+                        <div class="infobox1">
+                            <div class="singer">Taylor Swift</div>
+                            <div class="albumname">folklore</div>
+                            <div class="genre">pop / r&b</div>
+                            <div class="text">
+                                <a href="folklore.html"> Made from afar, primarily with the National’s Aaron Dessner,
+                                    Swift’s eighth album
+                                    is a sweater-weather record filled with cinematic love songs and rich fictional
+                                    details.</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="album album_S">
+                    <div class="col-3">
+                        <div class="abbox">
+                            <a href="fearless.html"><img src="img/fear.png"></a>
+                        </div>
+
+                    </div>
+                    <div class="col-7">
+                        <div class="infobox1">
+                            <div class="singer">Taylor Swift</div>
+                            <div class="albumname">fearless</div>
+                            <div class="genre">country</div>
+                            <div class="text">
+                                <a href="fearless.html"> Today on Pitchfork, we are taking a critical look at the rise of
+                                    Taylor Swift—from country underdog to pop superstar—with new reviews of her first
+                                    five records..</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="album album_S">
+                    <div class="col-3">
+                        <div class="abbox">
+                            <a href="melodrama.html"><img src="img/melo.png"></a>
+                        </div>
+
+                    </div>
+                    <div class="col-7">
+                        <div class="infobox1">
+                            <div class="singer">Lorde</div>
+                            <div class="albumname">Melodrama</div>
+                            <div class="genre">pop / r&b</div>
+                            <div class="text">
+                                <a href="melodrama.html"> Lorde captures emotions like none other. Her second album is a
+                                    masterful study of being a young woman, a sleek and humid pop record full of grief
+                                    and hedonism, crafted with the utmost care and wisdom.</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="album album_S">
+                    <div class="col-3">
+                        <div class="abbox">
+                            <a href="lifewill.html"><img src="img/life.png"></a>
+                        </div>
+
+                    </div>
+                    <div class="col-7">
+                        <div class="infobox1">
+                            <div class="singer">Jens Lekman</div>
+                            <div class="albumname">Life Will See You Now</div>
+                            <div class="genre">rock</div>
+                            <div class="text">
+                                <a href="lifewill.html"> On his fourth album, Jens Lekman opens up in new ways. He narrates
+                                    the vulnerability of others, works with a producer, and crafts pop songs that absorb
+                                    disco, calypso, and samba to soften their ache.</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="container5 footer">
+
+    <div class="logo">
+        <a href="index.html">Mango Street</a>
+    </div>
+    <div class="media">
+        <div class="icon"><a href="https://twitter.com/" target="_blank" class="media"><i class="fa fa-twitter"
+                                                                                          aria-hidden="true"></i></a>
+        </div>
+        <div class="icon"><a href="https://weibo.com/" target="_blank" class="media"><i class="fa fa-weibo"
+                                                                                        aria-hidden="true"></i></a>
+        </div>
+
+        <div class="icon"><a href="https://www.facebook.com/" target="_blank" class="media"><i
+                class="fa fa-facebook-official" aria-hidden="true"></i></a></div>
+
+    </div>
+    <div class="events">Mango Street MUSIC FESTIVALS: CHICAGO / PARIS / BERLIN Mango RADIO
+    </div>
+    <div class="contact">tel:13790501886</div>
+    <div class="cr">梁梓轩 all rights reversed</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MangoStreet | The Most Trusted Voice in Music</title>
+    <link rel="stylesheet" href="css/review.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/mustache.js/4.0.1/mustache.js"></script>
+    <script type="text/javascript" src="js/review.js"></script>
+
+
+
+</head>
+<body>
+<div class="container1">
+    <div class="top2 fixnav">
+        <div class="logo"><a href="index.html"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></div>
+        <div class="nav">
+            <div class="title review"><a href="review.html">reviews</a></div>
+            <div class="title"><a href="bnt.html">best new track</a></div>
+            <div class="title"><a href="podcast.html">podcast</a></div>
+<!--            <div class="title"><a href="bna.html">best new album</a></div>-->
+            <div class="title"><a href="event.html">events</a></div>
+            <div class="title"><a href="contact%20us.html">contact us</a></div>
+        </div>
+    </div>
+</div>
+<div class="container2">
+    <div class="title">
+        <div class="content">LATEST REVIEWS</div>
+    </div>
+    <div class="reviewlist">
+        <div class="album_row" id="a1">
+
+            <script>
+                $(function () {
+                    loadalbum();
+
+                });
+                $(".album").fadeIn();
+            </script>
+
+        </div>
+        <div class="album_row" id="a2">
+
+            <script>
+                $(function () {
+                    loadalbum2();
+
+                });
+
+            </script>
+
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>

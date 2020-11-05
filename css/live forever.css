@@ -1,0 +1,367 @@
+@font-face {
+    font-family: font1;
+    src: url("../font/5.otf");
+}
+
+@font-face {
+    font-family: font4;
+    src: url("../font/7.ttf");
+}
+
+@font-face {
+    font-family: font5;
+    src: url("../font/8.ttf");
+}
+
+@font-face {
+    font-family: font2;
+    src: url("../font/4.ttf");
+}
+
+@font-face {
+    font-family: font3;
+    src: url("../font/6.ttf");
+}
+
+@font-face {
+    font-family: title1;
+    src: url("../font/title.ttf");
+}
+
+@font-face {
+    font-family: title2;
+    src: url("../font/title2.otf");
+}
+
+@font-face {
+    font-family: title3;
+    src: url("../font/title3.ttf");
+}
+
+@font-face {
+    font-family: intro;
+    src: url("../font/intro3.ttf");
+}
+
+@font-face {
+    font-family: intro2;
+    src: url("../font/intro2.ttf");
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+@-moz-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+@-o-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+@-ms-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+body {
+    animation: fadein 0.4s ease-in;
+    -webkit-animation: fadein .4s linear 1;
+    -moz-animation: fadein .4s linear 1;
+    -o-animation: fadein .4s linear 1;
+    -ms-animation: fadein .4s linear 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container2 {
+    overflow: hidden;
+    width: 100%;
+    box-sizing: content-box;
+    padding-top: 50px;
+    background-image: url("../img/reviewback.png");
+}
+
+.container2 > * div {
+    overflow: hidden;
+}
+
+.container1 {
+    height: 45px;
+    overflow: hidden;
+}
+
+.col-1,
+.col-2,
+.col-6,
+.col-4,
+.col-8,
+.col-1,
+.col-3,
+.col-5,
+.col-7,
+.col-0\.5,
+.col-6\.5 {
+    float: left;
+    min-height: 10px;
+}
+
+.col-1 {
+    width: 15%;
+}
+
+.col-0\.5 {
+    width: 5%;
+}
+
+.col-6\.5 {
+    width: 65%;
+}
+
+.col-2 {
+    width: 20%;
+}
+
+.col-6 {
+    width: 60%;
+}
+
+.col-4 {
+    width: 40%;
+}
+
+.col-8 {
+    width: 80%;
+}
+
+.col-7 {
+    width: 70%;
+}
+
+.col-3 {
+    width: 30%;
+}
+
+.col-5 {
+    width: 50%;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.top2 {
+    background: #222f3e;
+    transition: background-color 500ms ease-in;
+}
+
+
+.top2,
+.top2 .nav {
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+}
+
+
+.top2 .logo {
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+
+}
+
+.top2 .logo a {
+    height: 45px;
+    display: block;
+    line-height: 45px;
+    color: #f8efd4;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.top2 .logo a:hover {
+    color: #c56183;
+}
+
+.top2 .nav {
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    margin-left: 70px;
+
+}
+
+.top2 .nav .title {
+    margin: 0 20px;
+    font-family: font3;
+
+}
+
+.top2 .nav .title a {
+    font-size: 25px;
+    color: #ffa5a5;
+}
+
+.top2 .nav .review a {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.top2 .nav .title a:hover {
+    color: #e7e7de;
+    border-bottom: 1px solid #e7e7de;
+    font-weight: bold;
+}
+
+.fixnav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    width: 100%;
+}
+
+.pic {
+    position: relative;
+    width: 50%;
+    height: 80%;
+}
+
+.col-4 img {
+    width: 100%;
+    height: 100%;
+}
+
+.markbanner {
+    padding: 90px;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+.card {
+    padding: 80px;
+    overflow: hidden;
+    background: #f7f1e3;
+
+}
+
+.mark {
+    float: right;
+}
+
+.info {
+    /*position: absolute;*/
+    height: 269px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.card .col-4{
+    height: 269px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+.card .col-4 > div{
+    margin: 0 40px;
+}
+.info .singer {
+    font-family: intro2;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.info .song {
+    font-family: title1;
+    font-size: 30px;
+}
+.mark{
+    padding: 20px;
+    font-family: intro2;
+    font-size: 30px;
+    border-radius: 100px;
+    border: 4px solid red;
+    color: red;
+}
+.review .container{
+    width: 80%;
+    margin: 0 auto;
+
+}
+.text{
+    padding: 100px;
+    background: #f7f1e3;
+    font-family: intro;
+    font-size: 20px;
+    line-height: 30px;
+    text-align:justify ;
+    border-radius: 10px;
+}

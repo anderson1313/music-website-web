@@ -1,0 +1,510 @@
+
+@keyframes lefteaseinAnimate {
+    0% {
+        transform: translateX(-2000px);
+        opacity: 0;
+    }
+    /*在0%时设置文字在想X轴-2000px位移处（左边），透明度为0，也就是看不见文字*/
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}
+
+@-webkit-keyframes lefteaseinAnimate {
+    0% {
+        -webkit-transform: translateX(-2000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@-o-keyframes lefteaseinAnimate {
+    0% {
+        -webkit-transform: translateX(-2000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes lefteaseinAnimate {
+    0% {
+        -webkit-transform: translateX(-2000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes lefteaseinAnimate {
+    0% {
+        -webkit-transform: translateX(-2000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@font-face {
+    font-family: font1;
+    src: url("../font/5.otf");
+}
+
+
+@font-face {
+    font-family: font4;
+    src: url("../font/7.ttf");
+}
+
+@font-face {
+    font-family: font5;
+    src: url("../font/8.ttf");
+}
+
+@font-face {
+    font-family: font2;
+    src: url("../font/4.ttf");
+}
+
+@font-face {
+    font-family: font3;
+    src: url("../font/6.ttf");
+}
+
+@font-face {
+    font-family: title1;
+    src: url("../font/title.ttf");
+}
+
+@font-face {
+    font-family: title2;
+    src: url("../font/title2.otf");
+}
+
+@font-face {
+    font-family: title3;
+    src: url("../font/title3.ttf");
+}
+
+@font-face {
+    font-family: intro;
+    src: url("../font/intro3.ttf");
+}
+
+@font-face {
+    font-family: intro2;
+    src: url("../font/intro2.ttf");
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+@-moz-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+@-o-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+@-ms-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+body {
+    animation: fadein 0.4s ease-in;
+    -webkit-animation: fadein .4s linear 1;
+    -moz-animation: fadein .4s linear 1;
+    -o-animation: fadein .4s linear 1;
+    -ms-animation: fadein .4s linear 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.container2 > * div {
+    overflow: hidden;
+}
+
+.container1 {
+    height: 45px;
+    overflow: hidden;
+}
+
+.col-1,
+.col-2,
+.col-6,
+.col-4,
+.col-8,
+.col-1,
+.col-3,
+.col-5,
+.col-7,
+.col-0\.5,
+.col-6\.5 {
+    float: left;
+    min-height: 10px;
+}
+
+.col-1 {
+    width: 15%;
+}
+
+.col-0\.5 {
+    width: 5%;
+}
+
+.col-6\.5 {
+    width: 65%;
+}
+
+.col-2 {
+    width: 20%;
+}
+
+.col-6 {
+    width: 60%;
+}
+
+.col-4 {
+    width: 40%;
+}
+
+.col-8 {
+    width: 80%;
+}
+
+.col-7 {
+    width: 70%;
+}
+
+.col-3 {
+    width: 30%;
+}
+
+.col-5 {
+    width: 50%;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.top2 {
+    background: #222f3e;
+    transition: background-color 500ms ease-in;
+}
+
+
+.top2,
+.top2 .nav {
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+}
+
+
+.top2 .logo {
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+
+}
+
+.top2 .logo a {
+    height: 45px;
+    display: block;
+    line-height: 45px;
+    color: #f8efd4;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.top2 .logo a:hover {
+    color: #c56183;
+}
+
+.top2 .nav {
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    margin-left: 70px;
+
+}
+
+.top2 .nav .title {
+    margin: 0 20px;
+    font-family: font3;
+
+}
+
+.top2 .nav .title a {
+    font-size: 25px;
+    color: #ffa5a5;
+}
+
+.top2 .nav .review a {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.top2 .nav .title a:hover {
+    color: #e7e7de;
+    border-bottom: 1px solid #e7e7de;
+    font-weight: bold;
+}
+
+.fixnav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    width: 100%;
+}
+
+/*.container2 .col-3,*/
+/*.container2 .col-7 {*/
+/*    height: 1000px;*/
+
+/*}*/
+.container2 .col-3{
+    height: 1078px;
+}
+
+.container2 .col-3 {
+    background: #84817a;
+}
+
+.container2 .container3 {
+    background-image: url("../img/folkloreback.JPG");
+    background-size: cover;
+    /*position: absolute;*/
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.col-7:after,
+.col-7:before{
+    content: ' ';
+    display: block;
+    clear: both;
+
+}
+
+.container2 .container3:after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(0, 0, 0, .1);*/
+    box-shadow: -230px 0 150px 60vw rgba(0, 0, 0, .5);
+    right: -100%;
+
+}
+
+.container2 .con {
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.picbox {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 28%;
+    margin-top: 50px;
+    animation: lefteaseinAnimate 0.8s ease 1; /*调用已定义好的动画lefteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
+    -webkit-animation: lefteaseinAnimate 1s ease 1;
+    -ms-animation: lefteaseinAnimate 1s ease 1;
+    -o-animation: lefteaseinAnimate 1s ease 1;
+    -moz-animation: lefteaseinAnimate 1s ease 1;
+
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+
+}
+/*定义一个名字为righteaseinAnimate动画，实现从页面的右边淡入页面效果*/
+@keyframes righteaseinAnimate{
+    0%{ transform: translateX(2000px); opacity: 0;}   /*在0%时设置文字在想X轴2000px位移处（右边），透明度为0，也就是看不见文字*/
+    100%{ transform: translateX(0px); opacity: 1;}      /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}
+@-webkit-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-o-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-ms-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-moz-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+.picbox .img {
+    width: 50%;
+    height: 80%;
+    margin: 0 auto;
+}
+.picbox img{
+    width: 100%;
+    height: 50%;
+}
+
+.info {
+    color: white;
+    text-align: center;
+    animation: lefteaseinAnimate 0.8s ease 1; /*调用已定义好的动画lefteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
+    -webkit-animation: lefteaseinAnimate 1s ease 1;
+    -ms-animation: lefteaseinAnimate 1s ease 1;
+    -o-animation: lefteaseinAnimate 1s ease 1;
+    -moz-animation: lefteaseinAnimate 1s ease 1;
+
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+
+}
+
+.info > div {
+    margin: 40px;
+}
+
+.picbox {
+    color: white;
+}
+
+.info .singer {
+    font-family: font3;
+    font-size: 30px;
+
+
+}
+
+.info .albumname {
+    font-family: font4;
+    font-size: 20px;
+}
+
+.info .author {
+    font-family: intro2;
+}
+
+span {
+    font-size: 40px;
+}
+.text {
+    width: 60%;
+    font-family: title3;
+    color: white;
+    z-index: 2;
+    line-height: 30px;
+    padding: 40px;
+
+}
+.text .content{
+    text-align: justify;
+      animation: righteaseinAnimate 1s ease 1;    /*调用已定义好的动画righteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
+    -webkit-animation: righteaseinAnimate 1s ease 1;
+    -moz-animation: righteaseinAnimate 1s ease 1;
+    -ms-animation: righteaseinAnimate 1s ease 1;
+    -o-animation: righteaseinAnimate 1s ease 1;
+
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;
+      -o-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+}
